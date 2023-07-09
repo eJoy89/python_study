@@ -24,3 +24,9 @@ print(format)
 print(format1)
 print(format2)
 print(format3)
+
+wordLeng = 'apple'
+
+print(','.join(wordLeng))
+
+print(a.split())
