@@ -4,6 +4,8 @@ c = ['life', 'is', 'too', 'short']
 d = [1, 2, 'life', 'is']
 e = [1, 2, ['life', 'is']]
 f = [1, 2, 3, 4, 5, 6, 7, 8]
+g = [3, 5, 6, 1, 4, 2]
+
 
 print(b[1] + d[0])
 print(e[2])
@@ -22,3 +24,15 @@ print(b)
 
 del b[1]
 print(b)
+
+del f[:4]
+print(f)
+
+b.append('good')
+print(b)
+
+b.append(['bad', 'strange'])
+print(b)
+
+g.sort()
+print(g)
