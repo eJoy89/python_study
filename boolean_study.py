@@ -21,4 +21,12 @@ bool([])
 bool(0)
 bool(2)
 print('------------')
-bool(0, 2)
+
+
+b = [1, 2, 3]
+print(id(b))
+
+c = [1, 2, 3]
+d = c
+print(id(c))
+print(id(d))
