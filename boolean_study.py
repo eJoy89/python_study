@@ -31,10 +31,17 @@
 # print(id(c))
 # print(id(d))
 
-a = [1, 2, 3]
-# b = a[:]
-b = a
+# a = [1, 2, 3]
+# # b = a[:]
+# b = a
 
-a[1] = 4
-print(a)
-print(b)
+# a[1] = 4
+# print(a)
+# print(b)
+
+
+from copy import copy
+
+a = [1, 2, 3]
+b = copy(a)
+print(a, b)
