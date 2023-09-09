@@ -40,12 +40,23 @@
 # print(b)
 
 
-from copy import copy
+# from copy import copy
 
-a = [1, 2, 3]
-b = copy(a)
-print(a, b)
+# a = [1, 2, 3]
+# b = copy(a)
+# print(a, b)
 
-c = 'gg'
-d = copy(c)
-print(d)
+# c = 'gg'
+# d = copy(c)
+# print(d)
+
+
+
+
+# a, b = ('python', 'life')
+# (a, b) = 'python', 'life'
+# [a, b] = ['python', 'life']
+a = b = 'python'
+
+print(a)
+print(b)
