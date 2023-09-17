@@ -56,7 +56,13 @@
 # a, b = ('python', 'life')
 # (a, b) = 'python', 'life'
 # [a, b] = ['python', 'life']
-a = b = 'python'
+# a = b = 'python'
 
-print(a)
-print(b)
+# print(a)
+# print(b)
+
+from copy import copy
+a = [1, 2, 3]
+b = a
+
+print(a is b)
