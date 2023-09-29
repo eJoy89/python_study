@@ -43,11 +43,24 @@
 # print('a' in ['a', 'b', 'c'])
 # print('a' not in ['a', 'b', 'c'])
 
-pocket = ['papper', 'money', 'cellphone']
+# pocket = ['papper', 'money', 'cellphone']
 
-# if 'money' in pocket:
-if 'no money' in pocket:
-    pass
+# # if 'money' in pocket:
+# if 'no money' in pocket:
+#     pass
 
+# else:
+#     print('by Card')
+
+
+pocket = ['paper', 'cellphone', 'money']
+
+card = True
+
+if 'money' in pocket:
+    print('take a taxi')
 else:
-    print('by Card')
+    if card:
+        print('take a taxi1')
+    else:
+        print('take a walk')
