@@ -55,12 +55,24 @@
 
 pocket = ['paper', 'cellphone', 'money']
 
-card = True
+# card = True
 
-if 'money' in pocket:
-    print('take a taxi')
-else:
-    if card:
-        print('take a taxi1')
-    else:
-        print('take a walk')
+# if 'money' in pocket:
+#     print('take a taxi')
+# else:
+#     if card:
+#         print('take a taxi1')
+#     else:
+#         print('take a walk')
+
+
+
+# if 'money' in pocket:
+#     pass
+# else:
+#     print('카드')
+
+if 'money' in pocket: pass
+else: print('카드')
+
+
