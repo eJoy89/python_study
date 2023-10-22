@@ -28,8 +28,15 @@
 #     add = add + i
 # print(add)
 
-for i in range(2, 10):
-    for j in range(1, 10):
-        # print(i * j)
-        print(i*j, end= " ")
-    print('')
+# for i in range(2, 10):
+#     for j in range(1, 10):
+#         # print(i * j)
+#         print(i*j, end= " ")
+#     print('')
+
+a = [1,2,3,4]
+result = []
+for num in a:
+    result.append(num*3)
+    
+print(result)
