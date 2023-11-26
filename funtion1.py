@@ -5,12 +5,31 @@
     
 # say_nick('바보')
 
-def say_myself(name, old, man = True):
-    print('나의 이름은 %s입니다' % name)
-    print('나이는 %d살입니다' % old)
-    if man:
-        print('남자입니다')
-    else:
-        print('여자입니다')
+# def say_myself(name, old, man = True):
+#     print('나의 이름은 %s입니다' % name)
+#     print('나이는 %d살입니다' % old)
+#     if man:
+#         print('남자입니다')
+#     else:
+#         print('여자입니다')
         
-say_myself('조윤재', 34, True)
+# say_myself('조윤재', 34, True)
+
+# a = 3
+# def vartest():
+#     global a
+#     a = a + 1
+#     return a
+# vartest()    
+# print(a)
+
+
+# add = lambda a, b: a + b
+# result = add(3, 4)
+# print(result)
+
+def add(a, b):
+    return a + b
+
+result = add(3, 4)
+print(result)
