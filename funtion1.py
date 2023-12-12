@@ -33,3 +33,6 @@ def add(a, b):
 
 result = add(3, 4)
 print(result)
+
+check = add(8, 10)
+print(check)
