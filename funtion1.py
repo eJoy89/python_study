@@ -36,3 +36,9 @@ print(result)
 
 check = add(8, 10)
 print(check)
+
+
+def multiply(a, b):
+    return a * b
+
+print(multiply(365, 20))
