@@ -45,5 +45,4 @@ print(multiply(365, 20))
 
 def text():
     return 'text testing'
-
 print(text())
