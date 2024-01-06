@@ -52,6 +52,8 @@ def text(text):
 
 print(text('Sentence'))
 
+
+# 회계 숫자
 def account(num):
     number_string = str(num)
     parts = number_string.split(".")
@@ -60,3 +62,16 @@ def account(num):
     return ",".join(parts)
 
 print(account(1000000))
+
+
+# 회계 숫자 소숫점 제거
+import locale
+
+def accounting_number(num):
+    locale.setlocale(locale.LC_ALL, '')
+    formatted_number = locale.format_string("%d", num, grouping=True)
+
+    return formatted_number
+
+result = accounting_number(1000000.321)
+print(result)
