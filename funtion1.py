@@ -28,21 +28,35 @@
 # result = add(3, 4)
 # print(result)
 
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
-result = add(3, 4)
-print(result)
+# result = add(3, 4)
+# print(result)
 
-check = add(8, 10)
-print(check)
+# check = add(8, 10)
+# print(check)
 
 
-def multiply(a, b):
-    return a * b
+# def multiply(a, b):
+#     return a * b
 
-print(multiply(365, 20))
+# print(multiply(365, 20))
 
-def text():
-    return 'text testing'
-print(text())
+# def text():
+#     return 'text testing'
+# print(text())
+
+def text(text):
+    return text + ' function'
+
+print(text('Sentence'))
+
+def account(num):
+    number_string = str(num)
+    parts = number_string.split(".")
+    parts[0] = "{:,}".format(int(parts[0]))
+    
+    return ",".join(parts)
+
+print(account(1000000))
