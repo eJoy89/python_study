@@ -28,11 +28,50 @@
 # result = add(3, 4)
 # print(result)
 
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
-result = add(3, 4)
+# result = add(3, 4)
+# print(result)
+
+# check = add(8, 10)
+# print(check)
+
+
+# def multiply(a, b):
+#     return a * b
+
+# print(multiply(365, 20))
+
+# def text():
+#     return 'text testing'
+# print(text())
+
+def text(text):
+    return text + ' function'
+
+print(text('Sentence'))
+
+
+# 회계 숫자
+def account(num):
+    number_string = str(num)
+    parts = number_string.split(".")
+    parts[0] = "{:,}".format(int(parts[0]))
+    
+    return ",".join(parts)
+
+print(account(1000000))
+
+
+# 회계 숫자 소숫점 제거
+import locale
+
+def accounting_number(num):
+    locale.setlocale(locale.LC_ALL, '')
+    formatted_number = locale.format_string("%d", num, grouping=True)
+
+    return formatted_number
+
+result = accounting_number(1000000.321)
 print(result)
-
-check = add(8, 10)
-print(check)
