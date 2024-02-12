@@ -27,7 +27,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 
-url = 'https://www.kcar.com/'
+url = 'https://sports.news.nate.com/view/20240212n03936/'
 response = requests.get(url)
 html_content = response.text
 soup = BeautifulSoup(html_content, 'html.parser')
@@ -37,20 +37,20 @@ elements_with_class = soup.find_all(class_='title')
 for element in elements_with_class:
     print(element.text)
 
-text_content_list = [element.text.strip() for element in elements_with_class]
+# text_content_list = [element.text.strip() for element in elements_with_class]
 
-df = pd.DataFrame({'Text Content': text_content_list})
+# df = pd.DataFrame({'Text Content': text_content_list})
 
-df.to_excel('output.xlsx', index=False)
+# df.to_excel('output.xlsx', index=False)
 
 
-if response.status_code == 200:
-    html_content = response.text
-    soup = BeautifulSoup(html_content, 'html.parser')
+# if response.status_code == 200:
+#     html_content = response.text
+#     soup = BeautifulSoup(html_content, 'html.parser')
 
-    elements_with_class = soup.find_all(class_='txtContentText')
+#     elements_with_class = soup.find_all(class_='txtContentText')
 
-    for element in elements_with_class:
-        print(element.text)
-else:
-    print(f"Failed to retrieve the page. Status code: {response.status_code}")
+#     for element in elements_with_class:
+#         print(element.text)
+# else:
+#     print(f"Failed to retrieve the page. Status code: {response.status_code}")
