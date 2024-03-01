@@ -1,27 +1,27 @@
-# def add(a, b):
-#     return a + b
+def add(a, b):
+    return a + b
 
-# print(add(7, 5))
+print(add(7, 5))
 
-# a = add(3, 4)
-# print(a)
+a = add(3, 4)
+print(a)
 
-# def say():
-#     return 'hi'
+def say():
+    return 'hi'
 
-# a = say()
-# print(a)
+a = say()
+print(a)
 
-# def sub(a, b):
-#     return a - b
-# print(sub(10, 3))
+def sub(a, b):
+    return a - b
+print(sub(10, 3))
 
-# def add(a, b):
-#     return a + b
+def add(a, b):
+    return a + b
 
-# result = add(a = 3, b = 5)
+result = add(a = 3, b = 5)
 
-# print(result)
+print(result)
 
 def add_mul(choice, *args):
     if choice == "add":
