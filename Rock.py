@@ -11,3 +11,8 @@ print(a, b, c)
 random_number = random.randint(1, 3)
 
 print(random_number)
+
+if random_number == 1:
+    print(a)
+else:
+    print('done')
