@@ -1,0 +1,30 @@
+MySql
+
+Database -> Table
+
+Create Database : it's for creating new Databse
+Show databases : it's for checking database list
+
+Use database_name : it's for selecting databass
+
+
+	1.	CREATE TABLE users:
+		The CREATE TABLE command creates a new table.
+		users is the name of the table, which will store user information.
+	
+        2.	id INT AUTO_INCREMENT PRIMARY KEY:
+		id: This field stores each user’s unique ID.
+		INT: The id field is an integer, meaning it only stores numbers.
+		AUTO_INCREMENT: This makes the value automatically increase. Each new record added will get a value 
+                that is 1 greater than the previous one.
+		PRIMARY KEY: This field serves as the primary key for the table. A primary key uniquely identifies
+                each record in the table and cannot have duplicate values.
+
+	3.	name VARCHAR(100):
+		name: This field stores the user’s name.
+		VARCHAR(100): A variable-length string with a maximum of 100 characters. Any string exceeding 
+                100 characters will not be allowed.
+	
+        4.	email VARCHAR(100):
+		email: This field stores the user’s email address.
+		VARCHAR(100): A variable-length string with a maximum of 100 characters.
