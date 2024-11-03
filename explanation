@@ -5,3 +5,6 @@ mysql -u root -p // it is for starting mysql
 show databases; // it is for showing my data bases
 
 mysql pw : 890912
+
+
+web server test
